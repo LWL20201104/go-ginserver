@@ -1,0 +1,14 @@
+app:
+  env: local
+  port: 8888
+  app_name: gin_server
+  app_url: http://localhost
+log:
+  level: info # 日志等级
+  root_dir: ./logs/app # 日志根目录
+  filename: gin_server.log # 日志文件名
+  show_line: true # 是否显示行号
+  max_backups: 3 # 旧文件的最大个数
+  max_size: 500 # 日志最大大小(MB)
+  max_age: 28 # 旧文件最大保留天数
+  compress: true # 是否压缩
